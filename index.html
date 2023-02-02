@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template 5 | Sparkle - Free Multipurpose</title>
+    <title>Sparkle</title>
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap Media Queries -->
@@ -23,13 +23,15 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo-white.png" alt="Logo">
+                <a href="index.html">
+                    <img src="images/logo-white.png" alt="Logo">
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">team</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#services">services</a></li>
                 </ul>
                 <div class="button">
                     <span></span>
@@ -44,16 +46,16 @@
     <div class="hero">
         <div class="hero-text">
             <h2>DESIGN COMES TO THOSE WHO WAIT</h2>
-            <p>Hello This is Onepage Multipurpose Template.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
             <a href="#">LEARN MORE</a>
         </div>
-        <a href="#">
+        <a href="#info">
             <i class="fas fa-chevron-down"></i>
         </a>
     </div>
     <!-- End Hero Section -->
     <!-- Start Info -->
-    <div class="info">
+    <div class="info" id="info">
         <div class="container">
             <div class="image">
                 <img src="images/info-mountain.png" alt="info mountain">
@@ -63,7 +65,7 @@
     </div>
     <!-- End Info -->
     <!-- Start Services -->
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <!-- Start Main Heading -->
             <div class="main-heading">
@@ -217,7 +219,7 @@
     </div>
     <!-- End Statistics -->
     <!-- Start Portfolio -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <!-- Start Main Heading -->
             <div class="main-heading">
@@ -229,40 +231,38 @@
             </div>
             <!-- End Main Heading -->
             <div class="shuffel">
-                <div class="left">
-                    <a href="#">GRAPHIC</a>
-                    <a href="#">WEB</a>
-                </div>
-                <div class="logo">
-                    <img src="images/logo-circle.png" alt="Logo Circle">
-                </div>
-                <div class="right">
-                    <a href="#">DEVELOPMENT</a>
-                    <a href="#">APP</a>
-                </div>
+                <ul class="left">
+                    <li imagetype="graphic">GRAPHIC</li>
+                    <li imagetype="web">WEB</li>
+                </ul>
+                <ul class="logo">
+                    <li imagetype="all">
+                        <img src="images/logo-circle.png" alt="Logo Circle">
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li imagetype="development">DEVELOPMENT</li>
+                    <li imagetype="app">APP</li>
+                </ul>
             </div>
         </div>
         <div class="gallery">
-            <div class="image">
+            <div class="image" imagetype="graphic">
                 <img src="images/portfolio-1.jpg" alt="portfolio 1">
             </div>
-            <div class="image">
+            <div class="image" imagetype="web">
                 <img src="images/portfolio-2.jpg" alt="portfolio 2">
             </div>
-            <div class="image">
+            <div class="image" imagetype="development">
                 <img src="images/portfolio-3.jpg" alt="portfolio 3">
-                <div class="text">
-                    <h3>DOE BRANDING</h3>
-                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim...</p>
-                </div>
             </div>
-            <div class="image">
+            <div class="image" imagetype="app">
                 <img src="images/portfolio-4.jpg" alt="portfolio 4">
             </div>
-            <div class="image">
+            <div class="image" imagetype="graphic">
                 <img src="images/portfolio-5.jpg" alt="portfolio 5">
             </div>
-            <div class="image">
+            <div class="image" imagetype="web">
                 <img src="images/portfolio-6.jpg" alt="portfolio 6">
             </div>
         </div>
@@ -278,8 +278,7 @@
     </div>
     <!-- End Video -->
     <!-- Start Team -->
-    <div class="team">
-        <div class="line"></div>
+    <div class="team" id="team">
         <div class="container">
             <!-- Start Main Heading -->
             <div class="main-heading">
@@ -322,6 +321,12 @@
                 </div>
             </div>
             <!-- End Members -->
+        </div>
+    </div>
+    <!-- End Team -->
+    <!-- Start Line -->
+    <div class="line">
+        <div class="container">
             <div class="text-box">
                 <div class="paragraph">
                     <p>Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.<br>
@@ -341,7 +346,7 @@
             </div>
         </div>
     </div>
-    <!-- End Team -->
+    <!-- End Line -->
     <!-- Start Footer -->
     <footer>
         <div class="container">
@@ -349,15 +354,15 @@
                 <img src="images/logo-circle-yellow.png" alt="Logo">
                 <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
                     Pellentesque in ipsum id orci porta dapibus.</p>
-                <p>Created by <span>Graphberry</span>,Belgrade,Serbia</p>
+                <p>Created by <span>AliHNasser</span></p>
                 <span>&copy; 2021 - Sparkle.Inc</span>
             </div>
             <div class="links">
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Terms and Conditions</a></li>
@@ -388,5 +393,6 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <script src="js/main.js"></script>
 </body>
 </html>
